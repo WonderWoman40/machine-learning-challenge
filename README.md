@@ -28,7 +28,7 @@ A detailed approach of the above steps:
 
 Reporting the Final Result
 
-* Create a README that reports a comparison of each model's performance as well as a summary about your findings and any assumptions you can make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
+
 
 
 For both models we did a train/test and this was to measure the accuracy of the our models. The train the model creates the model and the Test the model test the accuracy of the model. After this we tuned both models with `GridSearch`. For the SVM the tuning made the model more accurate with the values of the test and train score almost equal to 1, while for the Random Forest the models did not need any tuning as values dropped slightly below after tuning.
