@@ -1,93 +1,87 @@
-# Machine Learning Homework - Exoplanet Exploration
 
-![exoplanets.jpg](Images/exoplanets.jpg)
-
-### Before You Begin
-
-1. Create a new repository for this project called `machine-learning-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Give each model you choose their own Jupyter notebook, **do not use more than one model per notebook.**
-
-4. Save your best model to a file. This will be the model used to test your accuracy and used for grading.
-
-5. Commit your Jupyter notebooks and model file and push them to GitHub.
-
-## Note
-
-Keep in mind that this homework is optional! However, you will gain a much greater understanding of testing and tuning different Classification models if you do complete it.
-
-## Background
+Background
 
 Over a period of nine years in deep space, the NASA Kepler space telescope has been out on a planet-hunting mission to discover hidden planets outside of our solar system.
 
-To help process this data, you will create machine learning models capable of classifying candidate exoplanets from the raw dataset.
+To help process this data, i have created machine learning models capable of classifying candidate exoplanets from the raw dataset.
 
-In this homework assignment, you will need to:
+The following steps were taken as follows;
 
-1. [Preprocess the raw data](#Preprocessing)
-2. [Tune the models](#Tune-Model-Parameters)
-3. [Compare two or more models](#Evaluate-Model-Performance)
+1. Preprocess the raw data
+2. Tune the models
+3. Compare the two models used. 
 
-- - -
+A detailed approach of the above steps:
 
-## Instructions
 
-### Preprocess the Data
+
+1. Preprocess the Data
 
 * Preprocess the dataset prior to fitting the model.
 * Perform feature selection and remove unnecessary features.
 * Use `MinMaxScaler` to scale the numerical data.
 * Separate the data into training and testing data.
 
-### Tune Model Parameters
+2. Tune Model Parameters
 
 * Use `GridSearch` to tune model parameters.
-* Tune and compare at least two different classifiers.
+* Tune and compare the two different classifiers selected(Support Vector Machine(SVM) and Random Forest Classifier).
 
-### Reporting
+Reporting the Final Result
 
-* Create a README that reports a comparison of each model's performance as well as a summary about your findings and any assumptions you can make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
 
-- - -
 
-## Resources
 
-* [Exoplanet Data Source](https://www.kaggle.com/nasa/kepler-exoplanet-search-results)
+For both models we did a train/test and this was to measure the accuracy of the our models. The train the model creates the model and the Test the model test the accuracy of the model. After this we tuned both models with `GridSearch`. For the SVM the tuning made the model more accurate with the values of the test and train score almost equal to 1, while for the Random Forest the models did not need any tuning as values dropped slightly below after tuning.
+                             SVM                              RFC
+                BEFORE TUNING   AFTER TUNING    TRAINING SCORE  AFTER TUNING 
+TRAINING SCORE      0.845           0.887           1.0             0.963
+TESTING SCORE       0.841           0.879           0.902           0.883
 
-* [Scikit-Learn Tutorial Part 1](https://www.youtube.com/watch?v=4PXAztQtoTg)
 
-* [Scikit-Learn Tutorial Part 2](https://www.youtube.com/watch?v=gK43gtGh49o&t=5858s)
+I also did some visualizations for the RFC model :
+The first visualization is for the Classification report and the second visualization is for the Features Importance. 
 
-* [Grid Search](https://scikit-learn.org/stable/modules/grid_search.html)
 
-- - -
 
-## Hints and Considerations
 
-* Start by cleaning the data, removing unnecessary columns, and scaling the data.
 
-* Not all variables are significant be sure to remove any insignificant variables.
 
-* Make sure your `sklearn` package is up to date.
 
-* Try a simple model first, and then tune the model using `GridSearch`.
 
-* When hyper-parameter tuning, some models have parameters that depend on each other, and certain combinations will not create a valid model. Be sure to read through any warning messages and check the documentation
 
-- - -
 
-## Submission
 
-* Create a Jupyter Notebook for each model and host the notebooks on GitHub.
 
-* Create a file for your best model and push to GitHub
 
-* Include a README.md file that summarizes your assumptions and findings.
 
-* Submit the link to your GitHub project to Bootcamp Spot.
 
-* Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
 
-##### © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+
+
+
+
+
+
+
+
+
+
+In conclusion the Random Forest Classifier Model is the most accurate based on my data. It had the highest scores close to 1 and had 1.0 for the training data even before tuning. I would say the RFC model is good at predicting the new exponents. However there is no harm in trying other models to test their accuracy if we could get any better than the RFC model. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
