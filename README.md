@@ -36,6 +36,10 @@ SVC | Before Tuning | After Tuning
 *Training score* | `0.845` | **0.887**
 Testing Score | 0.841 | 0.879
 
+RFC | Before Tuning | After Tuning
+--- | --- | ---
+*Training score* | `1.0` | **0.963**
+Testing Score | 0.902 | 0.8883
 
 
 
