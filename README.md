@@ -44,7 +44,8 @@ Testing Score | 0.902 | 0.8883
 
 I also did some visualizations for the RFC model :
 The first visualization is for the Classification report and the second visualization is for the Features Importance. 
-https://github.com/WonderWoman40/machine-learning-challenge/blob/main/Images/Feature_importances.png?raw=true
+![RandomForestClassifier Classification Report](https://github.com/WonderWoman40/machine-learning-challenge/blob/main/Images/Feature_importances.png?raw=true)
+
 
 In conclusion the Random Forest Classifier Model is the most accurate based on my data. It had the highest scores close to 1 and had 1.0 for the training data even before tuning. I would say the RFC model is good at predicting the new exponents. However there is no harm in trying other models to test their accuracy if we could get any better than the RFC model. 
 
