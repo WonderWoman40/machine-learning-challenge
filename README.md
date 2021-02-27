@@ -31,9 +31,11 @@ Reporting the Final Result
 
 For both models we did a train/test and this was to measure the accuracy of the our models. The train the model creates the model and the Test the model test the accuracy of the model. After this we tuned both models with `GridSearch`. For the SVM the tuning made the model more accurate with the values of the test and train score almost equal to 1, while for the Random Forest the models did not need any tuning as values dropped slightly below after tuning.
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
+ | SVM |  | RFC
+Before Tuning | After Tuning | Before Tuning | After Tuning
+--- | --- | --- | ---
+*Training Score* | `0.845` | `0.887`| `1.0`| `0.963` | **nicely**
+*Testing Score* | `0.841` | `0.879`| `0.902`| `0.883` |  **nicely**
 1 | 2 | 3
                              SVM                              RFC
                 BEFORE TUNING   AFTER TUNING    TRAINING SCORE  AFTER TUNING 
