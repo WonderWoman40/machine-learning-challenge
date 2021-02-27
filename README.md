@@ -42,18 +42,6 @@ RFC | Before Tuning | After Tuning
 Testing Score | 0.902 | 0.8883
 
 
-
-Before Tuning | After Tuning | Before Tuning | After Tuning
---- | --- | --- | ---
-*Training Score* | `0.845` | `0.887`| `1.0`| `0.963` | **nicely**
-*Testing Score* | `0.841` | `0.879`| `0.902`| `0.883` |  **nicely**
-1 | 2 | 3
-                             SVM                              RFC
-                BEFORE TUNING   AFTER TUNING    TRAINING SCORE  AFTER TUNING 
-TRAINING SCORE      0.845           0.887           1.0             0.963
-TESTING SCORE       0.841           0.879           0.902           0.883
-
-
 I also did some visualizations for the RFC model :
 The first visualization is for the Classification report and the second visualization is for the Features Importance. 
 ![alt text](https://github.com/[WonderWoman40]/[machine-learning-challenge]/blob/[main]/RandomForestClassifier Classification Report.png?raw=true)
